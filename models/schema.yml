@@ -1,0 +1,19 @@
+
+version: 2
+
+models:
+  - name: joins
+
+sources:
+  - name: "{{ var('test_type') }}"
+    schema: "tesseract/benchmark/tpch/{{ var('test_type') }}"
+    tables:
+      - name: customer
+      - name: lineitem
+      - name: nation
+      - name: orders
+      - name: part
+      - name: partsupp
+      - name: region
+      - name: supplier
+      

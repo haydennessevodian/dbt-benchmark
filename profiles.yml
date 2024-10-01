@@ -1,0 +1,14 @@
+benchmark:
+  target: trino
+  outputs:
+    trino:
+      type: trino
+      schema: "tesseract/benchmarkout/tpch/{{ var('test_type') }}"
+      method: ldap
+      user: "{{ env_var('TRINO_USER') }}"
+      database: "vast"
+      password: "{{ env_var('TRINO_PASS') }}"
+      host: https://event-horizon.evodian.au
+      http_scheme: http
+      port: 443
+      threads: 1
