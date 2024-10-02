@@ -1,15 +1,12 @@
-Welcome to your new dbt project!
+Run tests like:
 
-### Using the starter project
+dbt run --vars 'test_type: sf1' -s +math
 
-Try running the following commands:
-- dbt run
-- dbt test
+dbt run --vars 'test_type: sf1_stats' -s +groups
 
+dbt run --vars 'test_type: sf100' -s +math
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+dbt run --vars 'test_type: sf100_projections' -s +aggregate
+
+dbt run --vars 'test_type: sf100_projections_stats' -s +nested
+
