@@ -19,7 +19,7 @@ left join nation
     on nation.nationkey = customer.nationkey
 where
     orders.orderdate >= date '1993-10-01'
-    and orders.orderdate < date '1993-10-01' + interval '3' month
+    and orders.orderdate < date '1993-10-01' + interval '10' year
     and lineitem.returnflag = 'R'
 group by
     customer.custkey,

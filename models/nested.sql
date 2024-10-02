@@ -34,7 +34,7 @@ where
                     lineitem.partkey = partsupp.partkey
                     and lineitem.suppkey = partsupp.suppkey
                     and lineitem.shipdate >= date('1994-01-01')
-                    and lineitem.shipdate < date('1994-01-01') + interval '1' year
+                    and lineitem.shipdate < date('1994-01-01') + interval '10' year
             )
     )
         and nation.name = 'CANADA'

@@ -14,7 +14,7 @@ select
 from
     lineitem
 where
-    lineitem.shipdate <= date '1998-12-01' - interval '90' day
+    lineitem.shipdate <= date '1998-12-01' + interval '20' year
 group by
     lineitem.returnflag,
     lineitem.linestatus

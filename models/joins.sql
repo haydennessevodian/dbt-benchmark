@@ -27,5 +27,7 @@ from (
         on n2.nationkey = supplier.nationkey
     where part.type = 'ECONOMY ANODIZED STEEL'
 ) as all_nations
-group by o_year
-order by o_year
+group by
+    o_year
+order by
+    o_year
