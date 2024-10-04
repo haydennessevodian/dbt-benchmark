@@ -8,7 +8,7 @@ benchmark:
       user: "{{ env_var('TRINO_USER') }}"
       database: "vast"
       password: "{{ env_var('TRINO_PASS') }}"
-      host: https://event-horizon.evodian.au
+      host: https://trino-test.evodian.au
       http_scheme: http
       port: 443
       threads: 1
